@@ -1,0 +1,42 @@
+#aboutTitle{
+	text-align: center;
+	margin-bottom: 60px;
+	h1{
+		font-size: 50px;
+		font-family: cursive;
+	}
+	h2{
+		font-size: 80px;
+		font-family: 'Times New Roman', Times, serif;
+	}
+	p{
+		font-size: 10px;
+	}
+}
+#aboutContent{
+	width: 60%;
+	margin: 0 auto;
+	article{
+		border-bottom: 1px solid rgba(255, 255, 255, 0.014);
+		text-align: justify;
+		margin-bottom: 20px;
+		h3{
+			font-size: 30px;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+			margin-bottom: 20px;
+		}
+		h4{
+			font-size: 20px;
+			margin-bottom: 5px;
+		}
+		video{
+			width: 98%;
+			margin: 0 auto;
+		}
+		img{
+			width: 98%;
+			margin: 0 auto;
+		}
+	}
+	
+}

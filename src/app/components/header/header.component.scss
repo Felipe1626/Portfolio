@@ -1,0 +1,22 @@
+nav {
+  margin: 30px 35px 50px 35px;
+  background-color: var(--header-footer-bg);
+  height: 50px;
+  line-height: 100px;
+  font-size: 20px;
+  border-radius: 10px;
+  .nav-link{
+    text-transform: uppercase;
+    color: var(--secondary-color);
+  }
+  .actived{
+    background: rgba(255, 255, 255, 0.048);
+  }
+  // :hover{
+  //   background-color: var(--secondary-color);
+  //   color: black;
+  // }
+}
+.actived{
+  background-color: rgba(255, 255, 255, 0.041);
+}

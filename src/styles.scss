@@ -1,1 +1,80 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --primary-color: black !important;
+    --secondary-color: white !important;
+    --header-footer-bg: rgba(255, 255, 255, 0.116) !important;
+}
+
+body{
+    background-color: #051405 !important;
+    margin: 0;
+    padding: 0;
+    color: var(--secondary-color);
+}
+
+#main{
+    margin: 50px auto;
+    padding: 2px;
+    width: 85%;
+    min-height: 10vh;
+    background-size: 800% !important;
+    background: linear-gradient(
+        45deg,
+        rgb(183, 1, 255), rgb(119, 255, 192), rgb(206, 83, 255),rgb(0, 190, 117), rgb(183, 1, 255), rgb(119, 255, 192), rgb(206, 82, 255),rgb(0, 190, 117)
+    );
+    border-radius: 20px;
+    animation: glowing 25s linear infinite;
+    
+}
+
+@keyframes glowing {
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 400% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
+#index-container{
+    width: 100%;
+    min-height: 10vh;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 20px;
+    color: var(--secondary-color);
+}
+
+
+/*-- LINE HEIGHT --*/
+.lh-full{
+    line-height: 100%;
+}
+
+/*-- PERSONALIZED WIDTH --*/
+.w-10{
+    width: 10%;
+}
+.w-70{
+    width: 70%;
+}
+
+/*--PERSONALIZED HEIGHT --*/
+.max-h-md{
+    max-height: 450px;
+}
+.max-h-sm{
+    max-height: 300px;
+}
+.min-h-sm{
+    min-height: 300px;
+}
+/*-- PERSONALIZED MARGIN --*/
+.mr-2{
+    margin-right: 8px;
+}
+/*-- OVERFLOW --*/
+.overflow-h{
+    overflow: hidden;
+}
