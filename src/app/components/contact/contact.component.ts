@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
 import * as nodemailer from 'nodemailer';
-import * as crypto from 'crypto'
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
 })
+
+
 export class ContactComponent {
+  
   name: string = '';
   email: string = '';
   message: string = '';
@@ -18,7 +20,7 @@ export class ContactComponent {
       secure: false,
       auth: {
         user: 'felipe.k.r.r16@gmail.com',
-        pass: 'Vfs@2926'
+        pass: ''
       }
     });
 
