@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import * as nodemailer from 'nodemailer';
-import * as crypto from 'crypto'
 
 
 @Component({
@@ -40,9 +39,6 @@ export class ContactComponent {
       }
     });
 
-  }
-  
-}
   }
   
 }
