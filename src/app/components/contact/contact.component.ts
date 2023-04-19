@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import * as nodemailer from 'nodemailer';
+import * as crypto from 'crypto'
+
 
 @Component({
   selector: 'app-contact',
@@ -9,7 +11,6 @@ import * as nodemailer from 'nodemailer';
 
 
 export class ContactComponent {
-  
   name: string = '';
   email: string = '';
   message: string = '';
@@ -39,6 +40,9 @@ export class ContactComponent {
       }
     });
 
+  }
+  
+}
   }
   
 }
