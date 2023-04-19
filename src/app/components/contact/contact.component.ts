@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import * as nodemailer from 'nodemailer';
+import * as crypto from 'crypto'
 
 @Component({
   selector: 'app-contact',
@@ -6,5 +8,35 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent {
+  name: string = '';
+  email: string = '';
+  message: string = '';
+  onSubmit() {
+    const transporter = nodemailer.createTransport({
+      host: 'smtp.gmail.com',
+      port: 587,
+      secure: false,
+      auth: {
+        user: 'felipe.k.r.r16@gmail.com',
+        pass: 'Vfs@2926'
+      }
+    });
 
+    const mailOptions = {
+      from: this.email,
+      to: 'recipient-email@example.com',
+      subject: 'New message from your website',
+      text: `Name: ${this.name}\nEmail: ${this.email}\n\nMessage: ${this.message}`
+    };
+
+    transporter.sendMail(mailOptions, (error: any, info: any) => {
+      if (error) {
+        console.error(error);
+      } else {
+        console.log('Email sent: ' + info.response);
+      }
+    });
+
+  }
+  
 }

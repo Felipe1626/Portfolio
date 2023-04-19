@@ -17,6 +17,7 @@ import { PostsLayoutComponent } from './components/home/components/posts-layout/
 import { PostComponent } from './components/home/components/posts/components/post/post.component';
 import { PostCommentComponent } from './components/home/components/posts/components/post-comment/post-comment.component';
 import { ArticlesComponent } from './components/home/components/components/articles/articles.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { ArticlesComponent } from './components/home/components/components/artic
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
