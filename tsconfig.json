@@ -28,14 +28,6 @@
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
-    "strictTemplates": true,
-    
-    "resolve": {
-      "fallback": {
-        "crypto": false,
-        "stream": false,
-        "buffer":false
-      }
-    }
+    "strictTemplates": true
   }
 }

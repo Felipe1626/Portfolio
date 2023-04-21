@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import * as nodemailer from 'nodemailer';
+/*import * as nodemailer from 'nodemailer';*/
 
 
 @Component({
@@ -14,6 +14,7 @@ export class ContactComponent {
   email: string = '';
   message: string = '';
   onSubmit() {
+    /*
     const transporter = nodemailer.createTransport({
       host: 'smtp.gmail.com',
       port: 587,
@@ -22,7 +23,7 @@ export class ContactComponent {
         user: 'felipe.k.r.r16@gmail.com',
         pass: ''
       }
-    });
+    });*/
 
     const mailOptions = {
       from: this.email,
@@ -30,7 +31,7 @@ export class ContactComponent {
       subject: 'New message from your website',
       text: `Name: ${this.name}\nEmail: ${this.email}\n\nMessage: ${this.message}`
     };
-
+    /*
     transporter.sendMail(mailOptions, (error: any, info: any) => {
       if (error) {
         console.error(error);
@@ -38,7 +39,7 @@ export class ContactComponent {
         console.log('Email sent: ' + info.response);
       }
     });
-
+    */
   }
   
 }
