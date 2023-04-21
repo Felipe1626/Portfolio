@@ -21,26 +21,32 @@
 
 <div id="myCarousel" class="carousel slide carousel-fade mb-4" data-bs-ride="carousel">
   <!-- Slides -->
-  <div class="carousel-inner rounded" style="height: 70vh;">
+  <div class="carousel-inner rounded vh-50 vh-sm-70" >
       <div class="carousel-item active">
           <a href="page1.html"><img src="{{ img_three_url }}" alt="Image 1" class="d-block w-100 h-100"></a>
           <div class="carousel-caption">
-              <h3>Image 1</h3>
-              <p>Image 1 description</p>
+              <h3>Cositas Kukas</h3>
+              <p class="d-none d-sm-block">E-commerce 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quia adipisci dolor sapiente a laudantium officiis laboriosam magni est! Est dolorum cumque, quis tenetur sint fugit. Aut beatae sint impedit.
+              </p>
           </div>
       </div>
       <div class="carousel-item">
           <a href="page2.html"><img src="{{ img_four_url }}" alt="Image 2" class="d-block w-100 h-100"></a>
           <div class="carousel-caption">
-              <h3>Image 2</h3>
-              <p>Image 2 description</p>
+              <h3>This Portfolio</h3>
+              <p class="d-none d-sm-block">Portfolio - Blog 
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id obcaecati doloremque reprehenderit vero quis in quo nisi et eos impedit. Maiores fugit itaque ea nobis nihil eveniet, similique iure expedita.
+              </p>
           </div>
       </div>
       <div class="carousel-item">
-          <a href="page3.html"><video src="{{ img_five_url }}" class="d-block w-100 h-100" loop autoplay mute></video></a>
+          <a href="page3.html"><video src="{{ video_one_url }}" class="d-block w-100 h-100" loop autoplay mute></video></a>
           <div class="carousel-caption">
-              <h3>Image 3</h3>
-              <p>Image 3 description</p>
+              <h3>New Project</h3>
+              <p class="d-none d-sm-block">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea corrupti, maxime perferendis doloremque accusamus eveniet a, obcaecati architecto sapiente nostrum alias. In eius, a ipsam minus tenetur beatae repellat ducimus.
+              </p>
           </div>
       </div>
   </div>
@@ -66,21 +72,23 @@
   </p> 
 </article>
 
-<div class="container">
-  <div class="panel active" style="background-image: url('{{ img_three_url }}')">
-    <h3>Explore The World</h3>
-  </div>
-  <div class="panel" style="background-image: url('{{ img_four_url }}')">
-    <h3>Wild Forest</h3>
-  </div>
-  <div class="panel" style="background-image: url('{{ img_five_url }}')">
-    <h3>Sunny Beach</h3>
-  </div>
-  <div class="panel" style="background-image: url('{{ img_six_url }}')">
-    <h3>City on Winter</h3>
-  </div>
-  <div class="panel" style="background-image: url('{{ img_seven_url }}')">
-    <h3>Mountains - Clouds</h3>
+<div class=".box-sizing-border-box d-flex align-items-center justify-content-center vh-50 vh-sm-95  m-0 overflow-hidden"> 
+  <div class="container d-flex">
+    <div class="panel active" (click)="changePanel($event.target)" style="background-image: url('{{ img_three_url }}')">
+      <h3>Explore The World</h3>
+    </div>
+    <div class="panel" (click)="changePanel($event.target)" style="background-image: url('{{ img_four_url }}')">
+      <h3>Wild Forest</h3>
+    </div>
+    <div class="panel" (click)="changePanel($event.target)"  style="background-image: url('{{ img_five_url }}')">
+      <h3>Sunny Beach</h3>
+    </div>
+    <div class="panel" (click)="changePanel($event.target)" style="background-image: url('{{ img_six_url }}')">
+      <h3>City on Winter</h3>
+    </div>
+    <div class="panel" (click)="changePanel($event.target)" style="background-image: url('{{ img_seven_url }}')">
+      <h3>Mountains - Clouds</h3>
+    </div>
   </div>
 </div>
 
