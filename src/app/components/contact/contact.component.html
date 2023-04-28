@@ -1,42 +1,44 @@
-<section id="contactContainer" class="w-50 mx-auto p-3 border-start border-end border-dark rounded-4">
-  <h2>What are you waiting for talk!</h2>
-  <div>
-    <a href="#">Whatsapp <img src="" alt=""></a>
-  </div>
-  <div>
-    <a href="#">LinkedIn <img src="" alt=""></a>
-  </div>
-  <div>
-    <a href="#">Github <img src="" alt=""></a>
-  </div>
-  <div>
-    <a href="#">Leave a message here <img src="" alt=""></a>
-  </div>
-</section>
-<br>
-<section class="w-100">
-  <div class="container w-50 border-start border-end border-dark p-3 rounded-4 mx-auto">
-    <h1 class="mb-4 text-center">Contact Me</h1>
-    <div class="row text-left mb-3">
-      <div class="col-md-12 mx-auto">
-        <p>Feel free to contact me with any questions or comments:</p>
-        <form #contac_form="ngForm" (submit)="onSubmit()">
-          <div class="form-group ">
-            <label for="name">Name:</label>
-            <input type="text" class="form-control" id="name" name="name" [(ngModel)]="name" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" class="form-control" id="email" name="email" [(ngModel)]="email" required>
-          </div>
-          <div class="form-group">
-            <label for="message">Message:</label>
-            <input type="text" class="form-control" id="message" name="message" [(ngModel)]="message" required>
-          </div>
-          <button type="submit" class="btn btn-primary w-100 mt-2">Send</button>
-        </form>
-      </div>
-    </div>
-  </div>  
-</section>
-<br>
+ <div class="d-flex border-top border-dark p-4">
+
+   <section id="contactContainer" class="p-3 border-start border-end border-dark rounded-4">
+     <h2>What are you waiting for talk!</h2>
+     <div>
+       <a href="#">Whatsapp <img src="" alt=""></a>
+     </div>
+     <div>
+       <a href="#">LinkedIn <img src="" alt=""></a>
+     </div>
+     <div>
+       <a href="#">Github <img src="" alt=""></a>
+     </div>
+     <div>
+       <a href="#">Leave a message here <img src="" alt=""></a>
+     </div>
+   </section>
+   <section class="w-25 mx-auto">
+     <div class="container w-100 border-start border-end border-dark p-3 rounded-4">
+       <h1 class="mb-4 text-center">Contact Me</h1>
+       <div class="row text-left mb-3">
+         <div class="col-md-12 mx-auto">
+           <p>Feel free to contact me with any questions or comments:</p>
+           <form #contac_form="ngForm" (submit)="onSubmit()">
+             <div class="form-group ">
+               <label for="name">Name:</label>
+               <input type="text" class="form-control" id="name" name="name" [(ngModel)]="mailOptions.name" required>
+             </div>
+             <div class="form-group">
+               <label for="email">Email:</label>
+               <input type="email" class="form-control" id="email" name="email" [(ngModel)]="mailOptions.email" required>
+             </div>
+             <div class="form-group">
+               <label for="message">Message:</label>
+               <input type="text" class="form-control" id="message" name="message" [(ngModel)]="mailOptions.message" required>
+             </div>
+             <button type="submit" class="btn btn-black text-light border-bottom w-100 mt-2">Send</button>
+           </form>
+         </div>
+       </div>
+     </div>  
+   </section>
+ </div>
+

@@ -18,6 +18,7 @@ import { PostComponent } from './components/home/components/posts/components/pos
 import { PostCommentComponent } from './components/home/components/posts/components/post-comment/post-comment.component';
 import { ArticlesComponent } from './components/home/components/components/articles/articles.component';
 import { FormsModule } from '@angular/forms';
+import { BlogComponent } from './components/blog/blog.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { FormsModule } from '@angular/forms';
     PostsLayoutComponent,
     PostComponent,
     PostCommentComponent,
-    ArticlesComponent
+    ArticlesComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,
