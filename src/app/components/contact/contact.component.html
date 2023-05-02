@@ -1,7 +1,7 @@
  <div class="d-flex border-top border-dark p-4">
 
-   <section id="contactContainer" class="p-3 border-start border-end border-dark rounded-4">
-     <h2>What are you waiting for talk!</h2>
+   <section class="p-3 border-start border-end border-dark rounded-4 contactContainer">
+     <h2 class="mb-3 mx-auto text-center">What are you waiting for talk!</h2>
      <div>
        <a href="#">Whatsapp <img src="" alt=""></a>
      </div>
@@ -10,9 +10,6 @@
      </div>
      <div>
        <a href="#">Github <img src="" alt=""></a>
-     </div>
-     <div>
-       <a href="#">Leave a message here <img src="" alt=""></a>
      </div>
    </section>
    <section class="w-25 mx-auto">
@@ -34,11 +31,26 @@
                <label for="message">Message:</label>
                <input type="text" class="form-control" id="message" name="message" [(ngModel)]="mailOptions.message" required>
              </div>
-             <button type="submit" class="btn btn-black text-light border-bottom w-100 mt-2">Send</button>
+             <button type="submit" class="btn btn-secondary w-100 mt-3">Send</button>
            </form>
          </div>
        </div>
      </div>  
+   </section>
+   <section class="p-3 border-start border-end border-dark rounded-4 contactContainer">
+     <h2 class="mb-3 mx-auto text-center">Menu</h2>
+     <div>
+       <a href=""> Home <img src="" alt=""></a>
+     </div>
+     <div>
+       <a href="about"> About Me <img src="" alt=""></a>
+     </div>
+     <div>
+       <a href="projects"> Projects <img src="" alt=""></a>
+     </div>
+     <div>
+       <a href="blog"> Blog <img src="" alt=""></a>
+     </div>
    </section>
  </div>
 

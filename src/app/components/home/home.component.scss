@@ -1,0 +1,46 @@
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 40vh;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  -webkit-transition: all 700ms ease-in;
+  h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+  }
+}
+.panel.active {
+  height: 80vh;
+  flex: 8;
+  h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none;
+  }
+}
+// .min-vh-80{
+//   min-height: 80vh;
+// }

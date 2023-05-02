@@ -61,6 +61,9 @@ body{
 }
 
 /*--PERSONALIZED HEIGHT --*/
+.vh-40{
+    height: 40vh;
+}
 .max-h-md{
     max-height: 450px;
 }
@@ -69,6 +72,9 @@ body{
 }
 .min-h-sm{
     min-height: 300px;
+}
+.min-vh-80{
+    min-height: 80vh;
 }
 /*-- PERSONALIZED MARGIN --*/
 .mr-2{

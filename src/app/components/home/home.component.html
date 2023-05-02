@@ -1,0 +1,56 @@
+<div class="container align-content-center mb-9 min-vh-80">
+ <div class="row d-flex">
+  <div class="min-vh-80 d-flex p-0 col">
+      <video class="w-100 rounded-start-3 rounded-end-5 " src="{{ video_url }}" autoplay mute loop></video>
+  </div>
+  <div class="min-vh-80 col-8 d-flex flex-column justify-content-center">
+    <h1 class="align-middle">
+      Hi, I'm Felipe 
+    </h1>
+    <p class="align-middle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis possimus illo labore quae commodi explicabo. Quod similique eos tempora sit quo facilis omnis esse optio accusantium iusto! Fugit, quia consequatur.</p>
+  </div>
+ </div>
+</div>
+<div class="vh-40 mb-9 w-100">
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse minus explicabo fugit tempore quam iste qui voluptatum porro, tempora magnam sed dicta nam vel. Ea non aliquid voluptas delectus laudantium. <a href="about">Who am I ? Do you wanna know more about me?</a></p>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-8"></div>
+    <div class="col"></div>
+  </div>
+  <div class="row">
+    <div class="col"></div>
+    <div class="col-8"></div>
+  </div>
+  <div class="row">
+    <div class="col-8"></div>
+    <div class="col"></div>
+  </div>
+</div>
+<div class="min-vh-100">
+  <div class=".box-sizing-border-box d-flex align-items-center justify-content-center vh-sm-95  m-0 overflow-hidden"> 
+    <div class="container d-flex">
+      <div class="panel" (click)="changePanel($event.target)" style="background-image: url('{{ img_three_url }}')">
+        <h3>Explore The World</h3>
+      </div>
+      <div class="panel" (click)="changePanel($event.target)" style="background-image: url('{{ img_four_url }}')">
+        <h3>Wild Forest</h3>
+      </div>
+      <div class="panel active" (click)="changePanel($event.target)"  style="background-image: url('{{ img_five_url }}')">
+        <h3>Sunny Beach</h3>
+      </div>
+      <div class="panel" (click)="changePanel($event.target)" style="background-image: url('{{ img_six_url }}')">
+        <h3>City on Winter</h3>
+      </div>
+      <div class="panel" (click)="changePanel($event.target)" style="background-image: url('{{ img_seven_url }}')">
+        <h3>Mountains - Clouds</h3>
+      </div>
+    </div>
+  </div>  
+</div>
+<div class="container">
+  <div class="row"></div>
+  <div class="row"></div>
+  <div class="row"></div>
+</div>
