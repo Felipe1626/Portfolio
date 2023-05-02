@@ -1,9 +1,9 @@
-<div class="container align-content-center mb-9 min-vh-80">
- <div class="row d-flex">
-  <div class="min-vh-80 d-flex p-0 col">
-      <video class="w-100 rounded-start-3 rounded-end-5 " src="{{ video_url }}" autoplay mute loop></video>
+<div class="container align-content-center mb-5 vh-80">
+ <div class="row d-flex overflow-hidden justify-content-center">
+  <video class=" h-80 position-absolute rounded-5 object-fit-fill w-80" src="{{ video_fr_full }}" autoplay mute loop></video>
+  <div class="min-vh-80 d-flex p-0 col-4 z-3">
   </div>
-  <div class="min-vh-80 col-8 d-flex flex-column justify-content-center">
+  <div class="min-vh-80 col-6 d-flex flex-column justify-content-center px-5 z-3">
     <h1 class="align-middle">
       Hi, I'm Felipe 
     </h1>
@@ -30,14 +30,14 @@
 </div>
 <div class="min-vh-100">
   <div class=".box-sizing-border-box d-flex align-items-center justify-content-center vh-sm-95  m-0 overflow-hidden"> 
-    <div class="container d-flex">
+    <div class="container align-items-center d-flex">
       <div class="panel" (click)="changePanel($event.target)" style="background-image: url('{{ img_three_url }}')">
         <h3>Explore The World</h3>
       </div>
       <div class="panel" (click)="changePanel($event.target)" style="background-image: url('{{ img_four_url }}')">
         <h3>Wild Forest</h3>
       </div>
-      <div class="panel active" (click)="changePanel($event.target)"  style="background-image: url('{{ img_five_url }}')">
+      <div class="panel" (click)="changePanel($event.target)"  style="background-image: url('{{ img_five_url }}')">
         <h3>Sunny Beach</h3>
       </div>
       <div class="panel" (click)="changePanel($event.target)" style="background-image: url('{{ img_six_url }}')">

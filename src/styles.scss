@@ -12,9 +12,9 @@ body{
 }
 
 #main{
-    margin: 50px auto;
+    margin: 25px auto;
     padding: 2px;
-    width: 85%;
+    width: 95%;
     min-height: 10vh;
     background-size: 800% !important;
     background: linear-gradient(
@@ -59,8 +59,14 @@ body{
 .w-70{
     width: 70%;
 }
+.w-80{
+    width: 80%;
+}
 
 /*--PERSONALIZED HEIGHT --*/
+.h-80{
+    height: 80% !important;
+}
 .vh-40{
     height: 40vh;
 }

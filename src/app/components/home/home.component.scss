@@ -21,6 +21,12 @@
     opacity: 0;
   }
 }
+
+.panel:nth-of-type(1),
+.panel:nth-of-type(5) {
+    height: 30vh;
+}
+
 .panel.active {
   height: 80vh;
   flex: 8;
@@ -41,6 +47,6 @@
     display: none;
   }
 }
-// .min-vh-80{
-//   min-height: 80vh;
-// }
+.w-80{
+  width: 80% !important;
+}
