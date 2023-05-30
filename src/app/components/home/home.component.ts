@@ -20,7 +20,7 @@ export class HomeComponent {
   
   ngOnInit() {
     this.panels = this.el.nativeElement.querySelectorAll('.panel');
-    this.changePanel(this.panels[6]);
+    this.changePanel(this.panels[2]);
   }
 
   changePanel(clickedPanel: any) {
