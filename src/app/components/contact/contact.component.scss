@@ -1,6 +1,6 @@
 .contactContainer{
   width: 270px;
-  min-height: 65vh;
+  height: 400px;
   margin: auto;
   div{
     width: 90%;
@@ -20,4 +20,14 @@
       color: white;
     }
   }
+}
+
+.h-300{
+  height: 400px;
+}
+.w-900{
+  width: 900px;
+}
+.w-270{
+  width: 270px;
 }

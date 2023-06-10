@@ -7,14 +7,14 @@
 body{
     background-color: #051405 !important;
     margin: 0;
-    padding: 0;
+    padding: 1px;
+    padding-right: 2px;
     color: var(--secondary-color);
 }
 
 #main{
-    margin: 25px auto;
     padding: 2px;
-    width: 95%;
+    width: 100%;
     min-height: 10vh;
     background-size: 800% !important;
     background: linear-gradient(
@@ -70,6 +70,9 @@ body{
 .vh-40{
     height: 40vh;
 }
+.max-vh-screen{
+    max-height: 85vh;
+}
 .max-h-md{
     max-height: 450px;
 }
@@ -99,4 +102,7 @@ body{
 
 .text-justify{
     text-align: justify;
+  }
+  .mb-6{
+    margin-bottom: 80px;
   }
