@@ -75,20 +75,141 @@
 
 <div class=".box-sizing-border-box d-flex align-items-center justify-content-center vh-50 vh-sm-95  m-0 overflow-hidden"> 
   <div class="container d-flex">
-    <div class="panel active" (click)="changePanel($event.target)" style="background-image: url('{{ img_three_url }}')">
-      <h3>Explore The World</h3>
+    <div class="panel active" (click)="changePanel($event.target)" style="background-color: rgb(167 243 208);">
+      <iframe src="" frameborder="0" class="w-75 mx-auto border-2 border-emerald-500"></iframe>
+      <h3 class="text-black">Weather</h3>
+      <!-- Open weather app-->
     </div>
-    <div class="panel" (click)="changePanel($event.target)" style="background-image: url('{{ img_four_url }}')">
-      <h3>Wild Forest</h3>
+    <div class="panel" (click)="changePanel($event.target)" style="background-color: rgb(110 231 183);">
+      <div *ngIf="" class="grid gap-{10px} w-75 h-75 mx-auto my-auto absolute grid-cols-3 gallery-container">
+        <div class="gallery__item relative w-{350px} h-{460px} ">
+          <div class="flip-card-inner relative w-100 h-100 text-center transition-{transform 0.7s ease-in-out}">
+              <div class="flip_card_front">
+                  <img src="{{ img_one_url }}" alt="Paris - France" class="gallery__img w-100 h-100 object-cover" title="Paris - France" >
+                  <h3 class="gallery__title absolute bottom-0 w-100 text-sm mx-auto p-1 font-bold border-black text-black bg-emerald-100">Eiffel Tower - Paris - France</h3>
+              </div>
+              <div class="flip_card_back">
+                  <div class="header">
+                      <div class="back-card">
+                          <h2 class="historycard">Around The World</h2>
+                          <h3 class="historycard"><strong>Eiffel Tower</strong></h3>
+                          <p class="historycard">Every evening, the Eiffel Tower is adorned with its golden covering and sparkles for 5 minutes every hour on the hour, while its beacon shines over Paris</p>
+                          <a href="#" alt="" class="historycard">Paris</a>                          
+                      </div>
+                  </div>
+                  <div class="footer">
+                      <div class="autor">
+                          <a href="https://felipe-rincon.xyz">
+                              <img src="" alt="">
+                              <span class="historycard"></span>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <!-- Gallery Item-->
+        <div class="gallery__item relative w-{350px} h-{460px} ">
+          <div class="flip-card-inner relative w-100 h-100 text-center transition-{transform 0.7s ease-in-out}">
+              <div class="flip_card_front">
+                  <img src="{{ img_one_url }}" alt="Paris - France" class="gallery__img w-100 h-100 object-cover" title="Paris - France" >
+                  <h3 class="gallery__title absolute bottom-0 w-100 text-sm mx-auto p-1 font-bold border-black text-black bg-emerald-100">Eiffel Tower - Paris - France</h3>
+              </div>
+              <div class="flip_card_back">
+                  <div class="header">
+                      <div class="back-card">
+                          <h2 class="historycard">Around The World</h2>
+                          <h3 class="historycard"><strong>Eiffel Tower</strong></h3>
+                          <p class="historycard">Every evening, the Eiffel Tower is adorned with its golden covering and sparkles for 5 minutes every hour on the hour, while its beacon shines over Paris</p>
+                          <a href="#" alt="" class="historycard">Paris</a>                          
+                      </div>
+                  </div>
+                  <div class="footer">
+                      <div class="autor">
+                          <a href="https://felipe-rincon.xyz">
+                              <img src="" alt="">
+                              <span class="historycard"></span>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <!-- Gallery Item-->
+        <div class="gallery__item relative w-{350px} h-{460px} ">
+          <div class="flip-card-inner relative w-100 h-100 text-center transition-{transform 0.7s ease-in-out}">
+              <div class="flip_card_front">
+                  <img src="{{ img_one_url }}" alt="Paris - France" class="gallery__img w-100 h-100 object-cover" title="Paris - France" >
+                  <h3 class="gallery__title absolute bottom-0 w-100 text-sm mx-auto p-1 font-bold border-black text-black bg-emerald-100">Eiffel Tower - Paris - France</h3>
+              </div>
+              <div class="flip_card_back">
+                  <div class="header">
+                      <div class="back-card">
+                          <h2 class="historycard">Around The World</h2>
+                          <h3 class="historycard"><strong>Eiffel Tower</strong></h3>
+                          <p class="historycard">Every evening, the Eiffel Tower is adorned with its golden covering and sparkles for 5 minutes every hour on the hour, while its beacon shines over Paris</p>
+                          <a href="#" alt="" class="historycard">Paris</a>                          
+                      </div>
+                  </div>
+                  <div class="footer">
+                      <div class="autor">
+                          <a href="https://felipe-rincon.xyz">
+                              <img src="" alt="">
+                              <span class="historycard"></span>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <!-- Gallery Item-->
+        <div class="gallery__item relative w-{350px} h-{460px} ">
+          <div class="flip-card-inner relative w-100 h-100 text-center transition-{transform 0.7s ease-in-out}">
+              <div class="flip_card_front">
+                  <img src="{{ img_one_url }}" alt="Paris - France" class="gallery__img w-100 h-100 object-cover" title="Paris - France" >
+                  <h3 class="gallery__title absolute bottom-0 w-100 text-sm mx-auto p-1 font-bold border-black text-black bg-emerald-100">Eiffel Tower - Paris - France</h3>
+              </div>
+              <div class="flip_card_back">
+                  <div class="header">
+                      <div class="back-card">
+                          <h2 class="historycard">Around The World</h2>
+                          <h3 class="historycard"><strong>Eiffel Tower</strong></h3>
+                          <p class="historycard">Every evening, the Eiffel Tower is adorned with its golden covering and sparkles for 5 minutes every hour on the hour, while its beacon shines over Paris</p>
+                          <a href="#" alt="" class="historycard">Paris</a>                          
+                      </div>
+                  </div>
+                  <div class="footer">
+                      <div class="autor">
+                          <a href="https://felipe-rincon.xyz">
+                              <img src="" alt="">
+                              <span class="historycard"></span>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <h3 class="text-black">Gallery</h3>
     </div>
-    <div class="panel" (click)="changePanel($event.target)"  style="background-image: url('{{ img_five_url }}')">
-      <h3>Sunny Beach</h3>
+    <div class="panel" (click)="changePanel($event.target)"  style="	background-color: rgb(52 211 153);">
+      <h3 class="text-black text-bold" >Calculator</h3>
     </div>
-    <div class="panel" (click)="changePanel($event.target)" style="background-image: url('{{ img_six_url }}')">
-      <h3>City on Winter</h3>
+    <div class="panel" (click)="changePanel($event.target)" style="background-color: rgb(16 185 129)">
+      <h3 class="text-black" >Cards</h3>
     </div>
-    <div class="panel" (click)="changePanel($event.target)" style="background-image: url('{{ img_seven_url }}')">
-      <h3>Mountains - Clouds</h3>
+    <div class="panel" (click)="changePanel($event.target)" style="background-color: rgb(5 150 105)">
+      <div class="d-hidden" *ngIf="">
+        <div class="container w-50 h-50 m-auto" >
+          <form class="form">
+            <h1>Admin LogIn</h1>
+            <input type="text">
+            <input type="text">
+            <button class="button">LogIn</button>
+          </form>
+        </div>
+      </div>
+      <h3 class="text-black" >Log In</h3>
     </div>
   </div>
 </div>

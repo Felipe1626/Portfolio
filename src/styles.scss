@@ -10,9 +10,13 @@ body{
     padding: 1px;
     padding-right: 2px;
     color: var(--secondary-color);
+    h1,h2,h3,h4,h5,h6{
+        font-family: 'Open Sans', sans-serif;
+    }
 }
 
 #main{
+    font-family: 'Raleway', sans-serif;
     padding: 2px;
     width: 100%;
     min-height: 10vh;
