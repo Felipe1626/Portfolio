@@ -23,31 +23,31 @@
   <!-- Slides -->
   <div class="carousel-inner rounded-5 vh-50 max-vh-screen" >
       <div class="carousel-item active">
-          <a href="page1.html"><img src="{{ cositas_kukas }}" alt="Image 1" class="d-block w-100 h-100"></a>
-          <div class="carousel-caption">
-              <!-- <h3>Cositas Kukas</h3>
-              <p class="d-none d-sm-block">E-commerce 
+          <a href="page1.html"><img src="{{ cositas_kukas }}" alt="Image 1" class="d-block w-100 h-100">
+          <div class="carousel-caption mx-auto my-auto">
+              <h3>Cositas Kukas</h3>
+              <p class="">E-commerce 
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quia adipisci dolor sapiente a laudantium officiis laboriosam magni est! Est dolorum cumque, quis tenetur sint fugit. Aut beatae sint impedit.
-              </p> -->
-          </div>
+              </p>
+          </div></a>
       </div>
       <div class="carousel-item">
           <a href="page2.html"><img src="{{ logo_form_ease }}" alt="Image 2" class="d-block w-100 h-100"></a>
           <div class="carousel-caption">
-              <!-- <h3>This Portfolio</h3>
+              <h3>This Portfolio</h3>
               <p class="d-none d-sm-block">Portfolio - Blog 
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id obcaecati doloremque reprehenderit vero quis in quo nisi et eos impedit. Maiores fugit itaque ea nobis nihil eveniet, similique iure expedita.
-              </p> -->
+              </p>
           </div>
       </div>
       <div class="carousel-item">
           <a href="page3.html"><video src="{{ around_the_world }}" class="d-block w-100 h-100" loop autoplay mute></video></a>
           <div class="carousel-caption">
-              <!-- <h3>Around the World</h3> 
+              <h3>Around the World</h3> 
               <p class="d-none d-sm-block">
                 Travel information
               </p>
-            -->
+            
           </div>
       </div>
   </div>
@@ -76,12 +76,15 @@
 <div class=".box-sizing-border-box d-flex align-items-center justify-content-center vh-50 vh-sm-95  m-0 overflow-hidden"> 
   <div class="container d-flex">
     <div class="panel active" (click)="changePanel($event.target)" style="background-color: rgb(167 243 208);">
-      <iframe src="" frameborder="0" class="w-75 mx-auto border-2 border-emerald-500"></iframe>
+      <div class="panel-content">
+        <iframe src="" frameborder="0" class="w-75 mx-auto border-2 border-emerald-500"></iframe>
+        <!-- Open weather app-->
+        
+      </div>
       <h3 class="text-black">Weather</h3>
-      <!-- Open weather app-->
     </div>
     <div class="panel" (click)="changePanel($event.target)" style="background-color: rgb(110 231 183);">
-      <div *ngIf="" class="grid gap-{10px} w-75 h-75 mx-auto my-auto absolute grid-cols-3 gallery-container">
+      <div class="grid gap-{10px} w-75 h-75 mx-auto my-auto absolute grid-cols-3 gallery-container panel-content">
         <div class="gallery__item relative w-{350px} h-{460px} ">
           <div class="flip-card-inner relative w-100 h-100 text-center transition-{transform 0.7s ease-in-out}">
               <div class="flip_card_front">
@@ -194,12 +197,18 @@
     </div>
     <div class="panel" (click)="changePanel($event.target)"  style="	background-color: rgb(52 211 153);">
       <h3 class="text-black text-bold" >Calculator</h3>
+      <div class="panel-content">
+
+      </div>
     </div>
     <div class="panel" (click)="changePanel($event.target)" style="background-color: rgb(16 185 129)">
       <h3 class="text-black" >Cards</h3>
+      <div class="panel-content">
+
+      </div>
     </div>
     <div class="panel" (click)="changePanel($event.target)" style="background-color: rgb(5 150 105)">
-      <div class="d-hidden" *ngIf="">
+      <div class="panel-content">
         <div class="container w-50 h-50 m-auto" >
           <form class="form">
             <h1>Admin LogIn</h1>

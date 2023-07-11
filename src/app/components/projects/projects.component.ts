@@ -22,11 +22,11 @@ export class ProjectsComponent {
   img_six_url: string = 'https://images.unsplash.com/photo-1551009175-8a68da93d5f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80';
   img_seven_url: string = 'https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80';
   
-  constructor(private el: ElementRef, private renderer: Renderer2) {}
+  constructor(private element: ElementRef, private renderer: Renderer2) {}
 
   
   ngOnInit() {
-    this.panels = this.el.nativeElement.querySelectorAll('.panel');
+    this.panels = this.element.nativeElement.querySelectorAll('.panel');
     this.changePanel(this.panels[0]);
   }
 

@@ -1,3 +1,21 @@
+.typewriter-container{
+  display: inline-block;
+}
+.typewriter{
+  width: 100%;
+  border-right: 1px solid;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 10s steps(70), cursor .4s step-end infinite alternate;
+}
+
+@keyframes typing{
+  from { width: 0 }
+}
+
+@keyframes cursor {
+  50% { border-color: transparent }
+}
 .panel {
   background-size: cover;
   background-position: center;

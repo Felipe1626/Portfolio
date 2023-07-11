@@ -19,6 +19,9 @@ import { PostCommentComponent } from './components/home/components/posts/compone
 import { ArticlesComponent } from './components/home/components/components/articles/articles.component';
 import { FormsModule } from '@angular/forms';
 import { BlogComponent } from './components/blog/blog.component';
+import { SpaceGameComponent } from './components/projects/space-game/space-game.component';
+import { TearableClothComponent } from './components/projects/tearable-cloth/tearable-cloth.component';
+import { ToDoComponent } from './components/projects/to-do/to-do.component';
 
 
 @NgModule({
@@ -37,7 +40,10 @@ import { BlogComponent } from './components/blog/blog.component';
     PostComponent,
     PostCommentComponent,
     ArticlesComponent,
-    BlogComponent
+    BlogComponent,
+    SpaceGameComponent,
+    TearableClothComponent,
+    ToDoComponent
   ],
   imports: [
     BrowserModule,

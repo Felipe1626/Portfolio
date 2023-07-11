@@ -6,14 +6,26 @@
   opacity: 0.7; /* Optional: adjust opacity to your preference */
 }
 
+.carousel-item:hover{
+  img, video{
+    opacity: 0.1;
+    animation: 200ms ease-in-out;
+  }
+}
+.carousel-item:hover .carousel-caption{
+  opacity: 1;
+  animation: 200ms ease-in-out;
+}
+
 .carousel-caption {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   text-align: center;
+  translate: 0 -45%;
   color: #fff;
+  opacity: 0;
+  cursor: pointer;
 }
+
 
 /* -- Finish Carousel -- */
 
@@ -33,33 +45,39 @@
   iframe{
     display: none;
   }
+  .panel-content{
+    display: none;
+  }
+  h3 {
+    font-size: 24px;
+    position: absolute;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    margin-top: 10px;
+    margin-left: 0;
+    opacity: 1;
+  }
 }
 
-.panel h3 {
-  font-size: 24px;
-  position: absolute;
-  writing-mode: vertical-lr;
-  text-orientation: upright;
-  margin-top: 10px;
-  margin-left: 0;
-  opacity: 1;
-}
 
 .panel.active {
   flex: 5;
   iframe{
     display: block;
   }
+  .panel-content{
+    display: block;
+  }
+  h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+    bottom: 20px;
+    left: 20px;
+    writing-mode: horizontal-tb;
+    font-family: 'Open Sans', sans-serif;
+  }
 }
 
-.panel.active h3 {
-  opacity: 1;
-  transition: opacity 0.3s ease-in 0.4s;
-  bottom: 20px;
-  left: 20px;
-  writing-mode: horizontal-tb;
-  font-family: 'Open Sans', sans-serif;
-}
 /* -- Start Exercises Cards -- */
 
 @media (max-width: 480px) {
