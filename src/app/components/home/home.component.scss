@@ -2,11 +2,11 @@
   display: inline-block;
 }
 .typewriter{
-  width: 80%;
+  width: 87%;
   border-right: 1px solid;
   white-space: nowrap;
   overflow: hidden;
-  animation: typing 10s steps(70), cursor .4s step-end infinite alternate;
+  animation: typing 9s steps(65), cursor .4s step-end infinite alternate;
 }
 
 @keyframes typing{
