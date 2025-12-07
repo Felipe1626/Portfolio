@@ -1,29 +1,67 @@
 .contactContainer{
+  padding-top: 20px;
   width: 270px;
   height: 400px;
   margin: auto;
   div{
+    background-color: rgba(15, 15, 15, 0.603);
     width: 90%;
     height: 60px;
     border-bottom: white 1px solid;
     border-radius: 10px;
     margin: auto;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+	      -6px -6px 10px -1px rgba(255, 255, 255, 0.479);
+  border: 1px solid rgba(0,0,0,0);
+  cursor: pointer;
+  transition: transform 0.5s;
     a{
       width: 100%;
       height: 100%;
       display: block;
       text-decoration: none;
       line-height: 55px;
-      padding-left: 35%;
+      color: bisque;
+      text-align: center;
+      p{
+        display: none;
+      }
+    }
+    a:hover{
+      display: flex;
+      text-align: center;
+      justify-content: center;
       color: white;
-      img{
-        width: 35px;
-        border-radius: 10px;
-        
+      box-shadow: 5px rgba(255, 255, 255, 0.308);
+      transition: ease-in-out;
+      .logo{
+        display: block;
+      }
+      p{
+        display: block;
+        font-size: medium;
+        margin-left: 5px;
       }
     }
   }
+  div:active{
+    transform: scale(0.9) !important;
+  }
+  div:hover{
+    background-color: rgba(250, 248, 248, 0.055);
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+	      inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+	      -0.5px -0.5px 0px rgba(255,255,255,1),
+	      0.5px 0.5px 0px rgba(0,0,0,0.15),
+	      0px 12px 10px -10px rgba(0,0,0,0.05);
+  border: 1px solid rgba(0,0,0,0.1);
+  transform: translateY(0.3em);
+  }
+}
+.contactContainer:hover{
+  background-color: rgba(255, 255, 255, 0.041);
+  box-shadow: 5 5 5 10px white;
 }
 
 .h-300{
@@ -34,4 +72,9 @@
 }
 .w-270{
   width: 270px;
+}
+
+.logo{
+  font-size: 40px;
+  font-weight: 500;
 }

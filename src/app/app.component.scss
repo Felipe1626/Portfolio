@@ -1,5 +1,16 @@
 #content{
+    position: relative;
     width: 100%;
-    min-height: 80vh;
-    padding: 15px;
+    max-height: 99vh;
+    padding: 0;
+    border-radius: 20px;
+    overflow: hidden;
 }
+
+.header{
+    height: 60px;
+    position: sticky;
+    top: 0;
+    z-index: 6;
+}
+

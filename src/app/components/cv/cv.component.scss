@@ -1,0 +1,153 @@
+.cv_container {
+   background-color: #f8f9faec;
+      color: #212529;
+      width: 70vw;
+      height: 100vh;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      margin: 0 auto;
+      padding: 40px 20px;
+      border-radius: 5px;
+      position: relative;
+    }
+
+    .cv_header {
+      text-align: center;
+      height: 10vw;
+      margin-bottom: 40px;
+      position: relative;
+    }
+
+    .cv_initials {
+      position: absolute;
+      top: -22%;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 100px;
+      color: rgba(0, 128, 128, 0.171);
+      font-family: 'comforter brush', serif;
+      font-weight: 500;
+      font-size: 12vw;
+      z-index: 1;
+    }
+
+    .cv_name {
+      font-size: 2.5rem;
+      line-height: 10vw;
+      font-weight: bold;
+      color: #005a5a;
+    }
+
+    .cv_columns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .cv_sidebar {
+      flex: 1;
+      min-width: 250px;
+      background-color: #e9f7f6;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .cv_sidebar h3 {
+      font-size: 1.1rem;
+      margin-top: 20px;
+      color: #007c7c;
+    }
+
+    .cv_sidebar p, .cv_sidebar a {
+      font-size: 0.95rem;
+      line-height: 1.4;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .cv_content {
+      flex: 2;
+    }
+
+    .cv_section {
+      margin-bottom: 40px;
+    }
+
+    .cv_section h2 {
+      color: #007c7c;
+      font-size: 1.4rem;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+    }
+
+    .cv_job-title {
+      font-weight: bold;
+      color: #333;
+    }
+
+    .cv_job-company {
+      font-style: italic;
+      color: #555;
+    }
+
+    .cv_bullet {
+      margin-left: 20px;
+      list-style-type: disc;
+    }
+
+    .cv_skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .cv_skill {
+      background-color: #d1f0ef;
+      color: #005a5a;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-size: 0.9rem;
+    }
+
+
+    .cover_letter {
+      display: flex;
+      gap: 10px;
+      background-color: #fff;
+      padding: 30px;
+      margin-top: 60px;
+      border: 1px solid #d1e7e7;
+      border-radius: 10px;
+      column-span: 2;
+      color: #333;
+    }
+    .cover_letter_decoration{
+      background-color: #007c7c;
+      height: 100%;
+      width: 10px;
+    }
+
+    .cover_letter h2 {
+      font-size: 1.6rem;
+      color: #005a5a;
+      margin-bottom: 20px;
+      border-bottom: none;
+    }
+
+    .cover_letter p {
+      width: 80%;
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .cv_container{
+        width: 90vw;
+        transition: ease-in-out 2s;
+      }
+      .cv_columns {
+        flex-direction: column;
+      }
+    }

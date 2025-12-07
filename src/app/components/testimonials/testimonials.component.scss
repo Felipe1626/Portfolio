@@ -1,0 +1,84 @@
+.testimonials_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  font-family: 'Inter', sans-serif;
+  background: #fff;
+}
+
+.testimonials_progress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: rotate(-90deg);
+  font-size: 0.8rem;
+  color: #333;
+}
+
+.testimonials_counter {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.testimonials_label {
+  letter-spacing: 1px;
+}
+
+.testimonials_images {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.testimonials_img {
+  object-fit: cover;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.testimonials_img.short {
+  height: 80px;
+  width: 60px;
+}
+
+.testimonials_img.mid {
+  height: 120px;
+  width: 80px;
+}
+
+.testimonials_img.tall {
+  height: 180px;
+  width: 100px;
+}
+
+.testimonials_img.active {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.testimonials_content {
+  max-width: 300px;
+  font-size: 1rem;
+}
+
+.testimonials_name {
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+.testimonials_company {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 1rem;
+}
+
+.testimonials_quote {
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #222;
+}

@@ -5,51 +5,139 @@
     --secondary-color: white !important;
     --header-footer-bg: rgba(255, 255, 255, 0.116) !important;
 }
+//Programmer - About
 
-body{
-    background-color: #051405 !important;
-    margin: 0;
-    padding: 1px;
-    padding-right: 2px;
-    color: var(--secondary-color);
-    h1,h2,h3,h4,h5,h6{
-        font-family: 'Open Sans', sans-serif;
-    }
+.caslon{
+  font-family: "Libre Caslon Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.philosopher {
+  font-family: "Philosopher", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+.oswald {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+.roboto-condensed {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+.raleway {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.nixie-one {
+  font-family: "Nixie One", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+//Tour guide
+
+// Artist
+.cinzel {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+.splash {
+  font-family: "Splash", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.comforter-brush {
+  font-family: "Comforter Brush", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.imperial-script {
+  font-family: "imperial Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.pinyon-script {
+  font-family: "Pinyon Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+//Self
+::-webkit-scrollbar{
+    border: solid 2px #ffffff17;
+    background-color: #2d3634d3;
+    width: 9px;
+    border-radius: 20px;
+}
+::-webkit-scrollbar:hover{
+    background-color: #202525e0;
+    border: solid 2px #ffffff21;
+    box-shadow: 3px -3px 15px #ffffff67;
 }
 
-#main{
-    font-family: 'Raleway', sans-serif;
-    padding: 2px;
+::-webkit-scrollbar-track{
     width: 100%;
-    min-height: 10vh;
-    background-size: 800% !important;
-    background: linear-gradient(
-        45deg,
-        rgb(183, 1, 255), rgb(119, 255, 192), rgb(206, 83, 255),rgb(0, 190, 117), rgb(183, 1, 255), rgb(119, 255, 192), rgb(206, 82, 255),rgb(0, 190, 117)
-    );
     border-radius: 20px;
-    animation: glowing 25s linear infinite;
     
 }
 
-@keyframes glowing {
-    0%{
-        background-position: 0 0;
-    }
-    50%{
-        background-position: 400% 0;
-    }
-    100%{
-        background-position: 0 0;
-    }
+::-webkit-scrollbar-thumb{
+    background-color: #5c6e6a15 ;
+    width: 100%;
+    border: solid 0.1px #0e757579;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #f302cbad, 0px 0px 10px #02bbf39d;
 }
+::-webkit-scrollbar-thumb:hover{
+    transition: 0.5s ease-in-out;
+    background-color: #5c6e6a50;
+    box-shadow: 0px 0px 5px #f302cbad, 0px 0px 10px #02bbf39d, 0px 0px 15px #f302cb9d, 0px 0px 20px #02bbf39d, 0px 0px 25px #f302cb9d, 0px 0px 30px #02bbf39d;
+}
+
+::-webkit-scrollbar-corner{
+    background-color: rgba(39, 63, 61, 0.212);
+}
+
+::-webkit-scrollbar-button{
+    color: #000;
+    background-color: rgba(37, 59, 53, 0.493);
+}
+
+body{
+    background-color: #000804 !important;
+    margin: 0;
+    padding: 0;
+    color: var(--secondary-color);
+    overflow: hidden;
+    position: relative;
+    scrollbar-color: #0000000e;
+    scroll-behavior: smooth;
+}
+
 #index-container{
     width: 100%;
-    min-height: 10vh;
+    height: 100vh;
+    margin-top: 0.5vh;
+    overflow: hidden;
+    overflow-x: hidden;
     background-color: var(--primary-color);
-    border: none;
+    border: solid 2px 2px 6px #fffffff5;
     border-radius: 20px;
     color: var(--secondary-color);
+    
 }
 
 

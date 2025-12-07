@@ -22,6 +22,13 @@ import { BlogComponent } from './components/blog/blog.component';
 import { SpaceGameComponent } from './components/projects/space-game/space-game.component';
 import { TearableClothComponent } from './components/projects/tearable-cloth/tearable-cloth.component';
 import { ToDoComponent } from './components/projects/to-do/to-do.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ArtistComponent } from './components/artist/artist.component';
+import { SelfComponent } from './components/self/self.component';
+import { GuideComponent } from './components/guide/guide.component';
+import { ProgrammerComponent } from './components/programmer/programmer.component';
+import { CvComponent } from './components/cv/cv.component';
+import { TestimonialsComponent } from './components/testimonials/testimonials.component';
 
 
 @NgModule({
@@ -43,13 +50,20 @@ import { ToDoComponent } from './components/projects/to-do/to-do.component';
     BlogComponent,
     SpaceGameComponent,
     TearableClothComponent,
-    ToDoComponent
+    ToDoComponent,
+    ArtistComponent,
+    SelfComponent,
+    GuideComponent,
+    ProgrammerComponent,
+    CvComponent,
+    TestimonialsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    FormsModule
+    FormsModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
